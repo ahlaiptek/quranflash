@@ -1,5 +1,5 @@
 function parseHTML(html) {
-    const t = document.createElement('template');
+    const t = document.createElement("template");
     t.innerHTML = html;
     return t.content;
 }
@@ -10,4 +10,5 @@ async function load_file_html(target, url) {
     target.appendChild(result);
 }
 
-load_file_html(document.body, '/partials/wa_melayang.html')
+load_file_html(document.body, "/partials/navbar.html");
+load_file_html(document.body, "/partials/wa_melayang.html");
