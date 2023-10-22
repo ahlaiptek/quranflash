@@ -1,0 +1,16 @@
+#wa_melayang {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Warna latar belakang WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 28px;
+}
+
+#wa_melayang:hover {
+    background-color: #128C7E; /* Warna latar belakang saat hover */
+}
