@@ -4,6 +4,9 @@ function csv_to_json(csv) {
 
 	for (let i = 0; i < lines.length; i++) {
 		let buffer = lines[i].split(",");
+		for (let j = 0; j < buffer.length; j++) {
+			buffer[j] = buffer[j].replaceAll('"', "");
+		}
 		result.push(buffer)
 	}
 
@@ -18,7 +21,7 @@ async function run() {
 	
 	for (const x of result) {
 		let html = `<div class="barang">
-            <img src="gambar-produk2.jpg" alt="Gambar produk">
+            <img src="/img/gambar/${x[3]}" alt="Gambar produk">
             <h2>${x[0]}</h2>
             <p>${x[2]}</p>
 			<hr>
