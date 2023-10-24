@@ -20,8 +20,10 @@ async function run() {
 		let html = `<div class="barang">
             <img src="gambar-produk2.jpg" alt="Gambar produk">
             <h2>${x[0]}</h2>
-            <p>Deskripsi Produk 2.</p>
+            <p>${x[2]}</p>
+			<hr>
             <p>Harga: ${x[1]}</p>
+			<button>Detail</button>
         </div>`;
         html = parseHTML(html);
         produk_element.appendChild(html);
